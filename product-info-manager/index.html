@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>商品資訊管理</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" placeholder="請輸入商品名稱" id="searchInput">
+    <button onclick="searchProducts()">搜尋</button>
+  </div>
+
+  <div id="productInfo" style="display: none;">
+    <h2>商品資訊</h2>
+    <label>位置: <input type="text" id="location"></label><br>
+    <label>商品名稱: <input type="text" id="productName"></label><br>
+    <label>商品編號: <input type="text" id="productCode"></label><br>
+    <label>價格: <input type="text" id="price"></label><br>
+    <label>商品折扣: <input type="text" id="discount"></label><br>
+    <label>商品說明: <textarea id="description"></textarea></label><br>
+    <button onclick="saveProductInfo()">儲存</button>
+    <button onclick="deleteProduct()">刪除</button>
+    <div id="successMessage" style="display: none; color: green; margin-top: 10px;">儲存成功</div>
+    <div id="deleteMessage" style="display: none; color: red; margin-top: 10px;">刪除成功</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
